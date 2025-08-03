@@ -32,7 +32,11 @@ public class DoublyLinkedList {
 //        printDLL(head);
 //        deleteNode(head.next.next);
 //        printDLL(head);
-        head = insertBeforeNode(head, 10);
+//        head = insertBeforeHead(head, 10);
+//        printDLL(head);
+//        head = insertBeforeTail(head, 10);
+//        printDLL(head);
+        head = insertBeforeKthNode(head, 3, 10);
         printDLL(head);
     }
 
@@ -116,12 +120,55 @@ public class DoublyLinkedList {
     }
 
     //    insertion at before the node
-    static Node insertBeforeNode(Node head, int val) {
+    static Node insertBeforeHead(Node head, int val) {
         Node newNode = new Node(val, head, null);
         head.prev = newNode;
         newNode.next = head;
         head = newNode;
         return newNode;
+    }
+
+    //    Insertion before the tail
+    static Node insertBeforeTail(Node head, int val) {
+        if (head.next == null) return insertBeforeHead(head, val);
+        Node tail = head;
+        while (tail.next != null) {
+            tail = tail.next;
+        }
+        Node back = tail.prev;
+        Node newNode = new Node(val, tail, back);
+        back.next = newNode;
+        tail.prev = newNode;
+        return head;
+    }
+
+    //    Inserting before the kth element
+    static Node insertBeforeKthNode(Node head, int k, int val) {
+        if (head == null) {
+            return insertBeforeHead(head, val);
+        }
+        Node temp = head;
+        int count = 0;
+        while (temp != null) {
+            count++;
+            if (count == k) {
+                break;
+            }
+            temp = temp.next;
+        }
+        Node back = temp.prev;
+        Node newNode = new Node(val, temp, back);
+        back.next = newNode;
+        temp.prev = newNode;
+        return head;
+    }
+
+    //    Insert before given node
+    static void insertBeforeGivenNode(Node node, int val) {
+        Node back = node.prev;
+        Node newNode = new Node(val, node, back);
+        back.next = newNode;
+        node.prev = newNode;
     }
 
     //   Printing doubly linked list
