@@ -57,7 +57,7 @@ public class FindAllPairsWithGivenSumInDLL_Sorted {
             } else if (currentSum < sum) {
                 left = left.next;
             } else {
-                right = right.prev;  // ✅ FIXED this line
+                right = right.prev;
             }
         }
         return result;
