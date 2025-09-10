@@ -31,4 +31,5 @@ public class Q118_PascalTriangle {
         }
         return triangle;
     }
+
 }
