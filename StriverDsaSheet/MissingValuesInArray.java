@@ -11,7 +11,6 @@ public class MissingValuesInArray {
         int n = arr.length;
         int expectedSum = n * (n + 1) / 2;  //total sum from 0 to n
         int actualSum = 0;
-
         for (int num : arr) {
             actualSum += num;
         }
@@ -21,15 +20,11 @@ public class MissingValuesInArray {
     static int missingValuesUsingXOR(int[] arr) {
         int n = arr.length;
         int x1 = 0, x2 = 0;
-
         for (int i = 0; i < n; i++) {
             x1 ^= arr[i];
             x2 ^= i;
         }
         x2 ^= n;
-
         return x1 ^ x2;
     }
-
-
 }

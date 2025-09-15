@@ -22,7 +22,6 @@ public class LowerBound {
         }
         return ans;
     }
-
     static int upperbound(int[] arr, int n, int x) {
         int low = 0, high = n - 1;
         int ans = n;
