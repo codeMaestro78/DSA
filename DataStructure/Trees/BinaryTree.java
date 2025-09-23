@@ -69,7 +69,6 @@ public class BinaryTree {
             System.out.println(node.val);
         }
         prettyDisplay(node.left, level + 1);
-
     }
 
     public static void main(String[] args) {
