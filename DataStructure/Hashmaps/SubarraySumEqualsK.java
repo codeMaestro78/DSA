@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class SubarraySumEqualsK {
     public static void main(String[] args) {
         int[] nums = { 1, 1, 1, 1, 1, 1, 1 };
-        int k = 2;
+        int k = 3;
         System.out.println(subarraySum(nums, k));
 
     }
