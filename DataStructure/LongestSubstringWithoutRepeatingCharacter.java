@@ -25,3 +25,7 @@ public class LongestSubstringWithoutRepeatingCharacter {
         return maxLen;
     }
 }
+
+/*Time complexity :-  O(n) Even though there is a while loop inside the for loop each character is visible by left and right pointers
+* at most once*/
+/* Space complexity :- O(min(m,n)) where n is the string length and m is the size od the character set */

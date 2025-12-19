@@ -23,7 +23,7 @@ public class PrefixMinMax {
         }
         int trapped = 0;
         for (int i = 0; i < n; i++) {
-            trapped += Math.min(leftMax[i, rightMax[i]) - height[i];
+            trapped += Math.min(leftMax[i] ,rightMax[i]) - height[i];
         }
         return trapped;
     }
