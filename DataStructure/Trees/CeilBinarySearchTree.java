@@ -20,7 +20,6 @@ public class CeilBinarySearchTree {
         return ceil;
     }
 
-
     static int floorBinaryTree(TreeNode root, int key) {
         int floor = -1;
 

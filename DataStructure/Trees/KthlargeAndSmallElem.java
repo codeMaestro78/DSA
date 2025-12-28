@@ -8,7 +8,7 @@ public class KthlargeAndSmallElem {
 // which requires O(N) time.
 //Space Complexity: O(N), since the code stores all the node values in a list.
 
-    static void  inOrder(TreeNode root, List<Integer> values) {
+    static void inOrder(TreeNode root, List<Integer> values) {
         if (root != null) {
             inOrder(root.left, values);
             System.out.println(root.val);
@@ -42,8 +42,52 @@ public class KthlargeAndSmallElem {
         System.out.println(result);
     }
 
-//    below is the optimal approach
+    //    below is the optimal approach
+    private int k;
+    private int result;
 
+    public int kthSmallest(TreeNode root, int k) {
+        this.k = k;
+        this.result = -1;
+        inOrder(root);
+        return result;
+    }
+
+    private void inOrder(TreeNode root) {
+        if (root != null) {
+            inOrder(root.left);
+            if (--k == 0) {
+                result = root.val;
+                return;
+            }
+            inOrder(root.left);
+        }
+    }
+
+    public int kthLargest(TreeNode root, int k) {
+        this.k = k;
+        this.result = -1;
+        reverseInOrder(root);
+        return result;
+
+    }
+
+    private void reverseInOrder(TreeNode root) {
+        if (root != null)
+            reverseInOrder(root.right);
+        if (--k == 0) {
+            result = root.val;
+            return;
+        }
+        reverseInOrder(root.left);
+    }
+
+    public List<Integer> kLargeSmall(TreeNode root,int k ){
+        List <Integer> result = new ArrayList<>();
+        result.add(kthSmallest(root, k));
+        result.add(kthLargest(root, k));
+        return result;
+    }
 
 }
 
