@@ -20,5 +20,10 @@ public class Q59A_Word {
         } else {
             System.out.println(s.toLowerCase());
         }
+
+
+
+
+        
     }
 }
