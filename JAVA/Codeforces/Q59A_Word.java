@@ -1,7 +1,7 @@
 package Codeforces;
 
 import java.util.Scanner;
-
+// another test for the webhook
 public class Q59A_Word {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -24,6 +24,6 @@ public class Q59A_Word {
 
 
 
-        
+
     }
 }
