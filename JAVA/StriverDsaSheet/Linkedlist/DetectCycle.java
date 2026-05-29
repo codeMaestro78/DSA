@@ -28,15 +28,15 @@ Node head = new Node(1);
     }
 
 
-    public boolean hasCycle(Node head){
+    public static boolean hasCycle(Node head){
         //  edge cases
 
-        if(head == null || head.next === null ) {
+        if(head == null || head.next == null ) {
             return false;
         }
 
         Node slow = head;
-        NOde fast = head;
+        Node fast = head;
 
 
         while(fast!=null && fast.next!=null) {
