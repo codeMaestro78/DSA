@@ -1,4 +1,4 @@
-package StriverLecture.ArrayPlaylist;
+package JAVA.StriverLecture.ArrayPlaylist;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 public class MoveZeroes {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 0, 0, 4, 5, 6, 7, 0, 8, 0 };
-        moveZeroes(arr);
+        moveZeroesOptimized(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -38,35 +38,28 @@ public class MoveZeroes {
 
     }
 
-    //  but here the time complexity is O(n) and space complexity is O(n) as we are using extra space for the temp array.
+    // but here the time complexity is O(n) and space complexity is O(n) as we are
+    // using extra space for the temp array.
 
-    //  Optimal solution
+    // Optimal solution
 
-    //  we can use the two pointer approach to solve this problem in O(n) time complexity and O(1) space complexity.
+    // we can use the two pointer approach to solve this problem in O(n) time
+    // complexity and O(1) space complexity.
 
-    public static List<Integer> moveZeroesOptimized(int[] arr) {
-        int j = -1;
+    // Optimal in-place solution: two-pointer
+    // Moves non-zero elements forward and fills the rest with zeros
+    public static void moveZeroesOptimized(int[] arr) {
+        int lastNonZeroFoundAt = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == 0) {
-                j = i;
-                break;
-
-            }
-        }
-
-        // no non zero numbers
-        if (j == -1) {
-            return new ArrayList<>();
-        }
-
-        for (int i = j + 1; i < arr.length; i++) {
             if (arr[i] != 0) {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-                j++;
+                // swap only if i and lastNonZeroFoundAt are different
+                if (i != lastNonZeroFoundAt) {
+                    int tmp = arr[lastNonZeroFoundAt];
+                    arr[lastNonZeroFoundAt] = arr[i];
+                    arr[i] = tmp;
+                }
+                lastNonZeroFoundAt++;
             }
         }
-        return new ArrayList<>();
     }
 }
