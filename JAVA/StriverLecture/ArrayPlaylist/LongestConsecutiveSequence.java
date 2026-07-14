@@ -5,6 +5,8 @@ public class LongestConsecutiveSequence {
     public static void main(String[] args) {
         int []arr = { 100, 4, 200, 1, 3, 2 };
         System.out.println(longestConsecutive(arr));
+        System.out.println(betterSolution(arr));
+        System.out.println(optimalSolution(arr));
     }
 
 
@@ -35,7 +37,6 @@ public class LongestConsecutiveSequence {
 
         return false;
     }
-
 
     // Better solution is the sort first. if we sort first then consecutive numbers sit next to each other.
     // O(n log n) time due to sorting, O(1) or O(n) space depending on sort.
