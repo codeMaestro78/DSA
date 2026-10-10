@@ -51,7 +51,7 @@ public class BalanceParantheses {
                 if ((ch == ')' && open != '(') ||
                         (ch == ']' && open != '[') ||
                         (ch == '}' && open != '{')) {
-                    return "Not balanced";
+                    return "Not balanced";   
                 }
 
             }
