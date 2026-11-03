@@ -1,0 +1,25 @@
+# Phase7 db source register
+
+All sources below were directly opened and mechanisms reviewed on **2026-11-03**. New lessons/cases are original **[INFERRED]**, company-neutral teaching. Product-named classic files describe hypothetical product classes, not private/current employer architecture. Source reliability supports documented mechanisms; it does not establish live behavior, candidate events or performance. Publication dates are distinct from access dates.
+
+| ID | Title / publisher | URL | Publication/update | Accessed | Type / reliability | Scope and limits |
+|---|---|---|---|---|---|---|
+| P7-DB-01 | InnoDB transaction model / Oracle MySQL | [Source](https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html) | Version 8.4; page date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Engine-specific transaction/locking concepts; no MySQL runtime |
+| P7-DB-02 | Transactions / MongoDB | [Source](https://www.mongodb.com/docs/manual/core/transactions/) | Rolling docs; date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Single-document atomicity and multi-document transaction scope; no cluster |
+| P7-DB-03 | Redis persistence / Redis | [Source](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) | Rolling docs; date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Snapshot/AOF tradeoffs; no configured durability test |
+| P7-DB-04 | DynamoDB read consistency / AWS | [Source](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html) | Rolling docs; date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Tables/LSI versus GSI/stream read options; global-table mode must be checked separately |
+| P7-DB-05 | Dynamo architecture / Apache Cassandra | [Source](https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html) | Documentation page identifies5.0; date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Partition/replica/consistency concepts; no benchmark or universal linearizability claim |
+| P7-DB-06 | Near-real-time search / Elastic | [Source](https://www.elastic.co/docs/manage-data/data-store/near-real-time-search) | Rolling docs; date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Index refresh versus search visibility; no fixed service SLO |
+| P7-DB-07 | pgvector / project maintainers | [Source](https://github.com/pgvector/pgvector) | Rolling README; release not pinned | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Exact/approximate retrieval/filtering mechanisms; no extension installed or speed claim |
+| P7-DB-08 | Session Basics / SQLAlchemy | [Source](https://docs.sqlalchemy.org/en/20/orm/session_basics.html) | Version 2.0; page date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Identity map/unit-of-work/transaction lifecycle; no ORM execution |
+| P7-DB-09 | Serving over HTTP / GraphQL Foundation | [Source](https://graphql.org/learn/serving-over-http/) | Rolling guidance; date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Transport/execution considerations; no GraphQL server |
+| P7-DB-10 | Standby servers / PostgreSQL | [Source](https://www.postgresql.org/docs/18/warm-standby.html) | Version 18; page date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Replication acknowledgment/failover concepts; no new native tests |
+| P7-DB-11 | Table partitioning / PostgreSQL | [Source](https://www.postgresql.org/docs/18/ddl-partitioning.html) | Version 18; page date unstated | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Partitioning/sharding distinction; no resharding implementation |
+| P7-DB-12 | HTTP Semantics / IETF | [Source](https://www.rfc-editor.org/rfc/rfc9110.html) | June2022 | 2026-11-03 | Primary official documentation/standard; high for stated mechanism | Method/conditional/retry semantics; no custom provider effect guarantees |
+| P7-DB-13 | Relationship Loading Techniques / SQLAlchemy | [Source](https://docs.sqlalchemy.org/en/20/orm/queryguide/relationships.html) | Version2.0; displayed release2.0.55,2026-10-16 | 2026-11-03 | Primary official documentation; high for stated loading behavior | Lazy-loading SELECT and identity-map qualifications; no ORM execution |
+
+## Validation boundary
+
+New chapters contain worked traces/reasoning, not newly executed database/service/provider implementations. Native Phase2 PostgreSQL checks and other prior validation retain their original scope. No claimed new SQL pass, cluster failover, provider action, cloud deployment or named-company architecture reconstruction follows from this register.
+
+[Local index](README.md) · [Central source registry](../SOURCE_INDEX.md). Last reviewed: **2026-11-03**.
