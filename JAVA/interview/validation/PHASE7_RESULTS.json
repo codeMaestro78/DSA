@@ -1,0 +1,223 @@
+{
+  "scope": "Local code, arithmetic and document checks only",
+  "results": [
+    {
+      "suite": "DSA Java compilation",
+      "status": "pass",
+      "command": [
+        "javac",
+        "--release",
+        "17",
+        "-d",
+        "/tmp/interview-final-java-9hdvekgv",
+        "interview/validation/dsa/CoreAlgorithms.java",
+        "interview/validation/dsa/CoreAlgorithmsTest.java"
+      ],
+      "output": ""
+    },
+    {
+      "suite": "DSA Java contracts",
+      "status": "pass",
+      "command": [
+        "java",
+        "-cp",
+        "/tmp/interview-final-java-9hdvekgv",
+        "CoreAlgorithmsTest"
+      ],
+      "output": "PASS: 15082 checks; seed=20261102; 2000 array/string, 400 graph, 400 coin trials; list sizes 0..60\n"
+    },
+    {
+      "suite": "Design arithmetic",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/design/check_capacity.py"
+      ],
+      "output": "PASS: 22 arithmetic, scenario and input checks; no load test performed.\n"
+    },
+    {
+      "suite": "AI helper contracts",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/ai/check_examples.py"
+      ],
+      "output": "PASS: 2920 checks; Python 3.12.0; fixed seed20261102; no provider/model calls.\n"
+    },
+    {
+      "suite": "ML numerical examples",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/ml/check_ml.py"
+      ],
+      "output": "PASS: 306 ML numerical/contract/syntax checks; NumPy 2.4.6; Python 3.12.0; seed=20261102\nFramework snippets: AST syntax only; torch/TensorFlow unavailable; no GPU or training framework run.\n"
+    },
+    {
+      "suite": "AI design arithmetic",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/ai-design/check_architecture.py"
+      ],
+      "output": "PASS: 21 AI architecture arithmetic, boundary and consistency checks; no provider, tokenizer, GPU or load test performed.\n"
+    },
+    {
+      "suite": "Question core examples",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/questions-core/check_examples.py"
+      ],
+      "output": "Java LRU contract: 64894 checks passed\nPython/NumPy question examples: 1493 checks passed\nPublished-code extraction: 3 blocks executed; no compiled artifacts retained in repository\n"
+    },
+    {
+      "suite": "Question AI helpers",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/questions-ai/check_examples.py"
+      ],
+      "output": "test_acquisition_failure_does_not_release (__main__.ContextTests.test_acquisition_failure_does_not_release) ... ok\ntest_body_exception_propagates_after_release (__main__.ContextTests.test_body_exception_propagates_after_release) ... ok\ntest_release_failure_is_visible (__main__.ContextTests.test_release_failure_is_visible) ... ok\ntest_success_identity_and_one_release (__main__.ContextTests.test_success_identity_and_one_release) ... ok\ntest_exhaustion_preserves_last_error_and_has_no_final_wait (__main__.RetryTests.test_exhaustion_preserves_last_error_and_has_no_final_wait) ... ok\ntest_five_attempt_upper_bound (__main__.RetryTests.test_five_attempt_upper_bound) ... ok\ntest_invalid_attempts_do_no_work (__main__.RetryTests.test_invalid_attempts_do_no_work) ... ok\ntest_one_attempt (__main__.RetryTests.test_one_attempt) ... ok\ntest_permanent_error_not_retried (__main__.RetryTests.test_permanent_error_not_retried) ... ok\ntest_published_source_parity (__main__.RetryTests.test_published_source_parity) ... ok\ntest_sleep_failure_propagates (__main__.RetryTests.test_sleep_failure_propagates) ... ok\ntest_success_no_sleep (__main__.RetryTests.test_success_no_sleep) ... ok\ntest_two_transients_then_success (__main__.RetryTests.test_two_transients_then_success) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "suite": "Question quantile fixture",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/questions-review/check_reasoning.py"
+      ],
+      "output": "PASS: 17 synthetic quantile/correlation checks; no service benchmark performed.\n"
+    },
+    {
+      "suite": "Mock core examples",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/mocks-core/check_examples.py"
+      ],
+      "output": "Java recent-user window: 20822 checks passed (20,000 seeded primary operations)\nPython/NumPy mock references: 3573 checks passed\nPublished-code extraction: 3 blocks executed; no service/model/hidden-test claim\n"
+    },
+    {
+      "suite": "Mock AI fixtures",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/mocks-ai/check_examples.py"
+      ],
+      "output": "PASS: 1802 checks; exact published helper plus synthetic AI/RAG/FS fixtures. No live service proof.\n"
+    },
+    {
+      "suite": "Mock design arithmetic",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/mocks-design/check_fixtures.py"
+      ],
+      "output": "PASS: 18 candidate-fixture arithmetic checks; no database, queue, customer or payment execution.\n"
+    },
+    {
+      "suite": "Question index",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/check_questions.py"
+      ],
+      "output": "PASS: 134 original records, 13 banks, metadata/IDs/related IDs/disclosures/anchors/index parity; difficulty {'Expert': 10, 'Advanced': 39, 'Beginner': 25, 'Intermediate': 60}. No technical or rendered-output proof.\n"
+    },
+    {
+      "suite": "Mock index",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/check_mocks.py"
+      ],
+      "output": "PASS: 9 candidate/interviewer pairs, 36 mapped tasks, six scoring dimensions per guide, 645 total practice minutes, timing/metadata/index parity. No answer truth, actual candidate performance, rendering or live system proved.\n"
+    },
+    {
+      "suite": "Research bookkeeping",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/check_research.py"
+      ],
+      "output": "PASS: 46 requested/additional research files; 93 Phase 4 source records; 337 central IDs; 227 accepted citation occurrences; 6 documented rejected-lead links. No URLs fetched, applicant events corroborated or claim truth proven.\n"
+    },
+    {
+      "suite": "Document structure",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/check_documents.py"
+      ],
+      "output": "PASS: 549 Markdown files, 69 README-covered directories, 5628 local links, 410 requested paths, 10 Python blocks syntax-parsed, 9 Mermaid blocks located; no structural/syntax errors. Python blocks were not executed by this checker; Mermaid was not rendered; external links/anchors were not checked.\n"
+    },
+    {
+      "suite": "Whole-library coverage",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/check_library.py"
+      ],
+      "output": "PASS:410 requested files delivered; six extension areas taught; 178 local Markdown fragments; 11 Phase7 registers/113 unique scoped records; no stale README authoring markers or standalone placeholders. No external freshness, technical truth or renderer equivalence proved.\n"
+    },
+    {
+      "suite": "Local anchor regression contracts",
+      "status": "pass",
+      "command": [
+        "/home/devarshi-lalani09/.pyenv/versions/3.12.0/bin/python3",
+        "-B",
+        "interview/validation/check_anchor_contract.py"
+      ],
+      "output": "PASS: 12 local anchor regression contracts; no universal renderer proof.\n"
+    }
+  ],
+  "not_executed": [
+    "Native PostgreSQL suites: separate disposable-server setup required",
+    "Browser rendering: separate browser setup/permission required",
+    "Hosted providers, training, cloud, payment and production systems"
+  ],
+  "observed_date": "2026-11-03",
+  "static_conversion": {
+    "scope": "Static GFM conversion only; no browser, Mermaid parse/SVG or CSS inspection",
+    "files": 549,
+    "disclosures": 540,
+    "tables": 421,
+    "mermaid_fences": 9,
+    "errors": []
+  },
+  "final_document_confirmation": {
+    "markdown_files": 549,
+    "readme_directories": 69,
+    "local_file_links": 5629,
+    "local_markdown_fragments": 178,
+    "requested_paths_authored": 410,
+    "phase7_registers": 11,
+    "phase7_external_context_records": 113,
+    "central_source_ids": 337,
+    "existing_java_hashes_unchanged": 205,
+    "scope": "Final document-only confirmation after report/results edits; the18 successful executable/metadata steps above retain their actual outputs."
+  },
+  "previous_run_summary": {
+    "local_steps_passed": 17,
+    "ML_checks": 276,
+    "AI_helper_checks": 2916,
+    "question_core_checks": 66374,
+    "superseded_by": "Fresh counterexample fixes and regression tests documented in PHASE_7_QA_REPORT.md"
+  }
+}
