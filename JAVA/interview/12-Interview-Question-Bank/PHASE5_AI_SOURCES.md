@@ -1,0 +1,31 @@
+# Phase 5 AI, RAG, Full Stack AI and FDE source scope
+
+All 40 questions in these four banks are original, company-neutral **[INFERRED]** practice. Sources support mechanisms and prerequisite explanations; none establishes employer question ownership, interview rounds or frequency. Scenario numbers, product requirements, thresholds and prices are stipulated teaching inputs. Suggested answers are reference approaches under those inputs, not deployment observations.
+
+Access/review date: **2026-11-02**. An undated live document is not newly published merely because it was accessed today. External sources below were opened and relevant passages inspected in this pass; local chapters were used to preserve terminology and avoid repeating their shorter Phase 3 prompts.
+
+| ID | Title | Publisher / author | URL or local resource | Publication / update | Access / review | Type | Reliability and supported scope / limits |
+|---|---|---|---|---|---|---|---|
+| P5-AI-01 | contextlib, Python 3.12 documentation | Python Software Foundation / Python contributors | [Python 3.12 contextlib](https://docs.python.org/3.12/library/contextlib.html) | Page publication date not stated; pinned documentation branch 3.12 | 2026-11-02 | [OFFICIAL] language documentation | Context-manager lifetime, yield and exception behavior for QB-AI-001; not proof of remote cleanup. Local execution uses Python 3.12.0, not the live documentation patch release. |
+| P5-AI-02 | RFC 9110: HTTP Semantics, §9.2.2 | IETF; Fielding, Nottingham, Reschke | [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2) | June 2022 | 2026-11-02 | [OFFICIAL] Internet Standard | Idempotent retry semantics and caution around non-idempotent requests; QB-AI-002 is a synthetic retry contract, not an HTTP client implementation or provider retry classification. |
+| P5-AI-03 | HTML Standard, server-sent events | WHATWG | [Server-sent events](https://html.spec.whatwg.org/multipage/server-sent-events.html) | Living Standard; displayed update 2026-10-30 at access | 2026-11-02 | [OFFICIAL] web standard | EventSource reconnection and Last-Event-ID for QB-FS-002; application event retention, replay consistency and authorization remain original design requirements. No browser or server was exercised. |
+| P5-AI-04 | Authorization Cheat Sheet | OWASP Cheat Sheet Series contributors | [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html) | Publication / update date not stated | 2026-11-02 | [OFFICIAL] project security guidance | Resource-level permission checking and least privilege for QB-AI-003 and QB-FS-003; illustrative dummy-principal scenarios, not findings about this repository or a deployed app. |
+| P5-AI-05 | Building effective agents | Anthropic Engineering | [Building effective agents](https://www.anthropic.com/research/building-effective-agents) | 2024-12-19; page warns tooling has changed since publication | 2026-11-02 | [OFFICIAL] vendor engineering essay | Workflow-versus-agent distinction for QB-AI-005. Architectural guidance only; no current SDK/framework setup or independent performance claim. |
+| P5-AI-L1 | AI and RAG canonical technical lessons | This knowledge base | [Technical chapters](../08-LLM-RAG-and-Agent-Engineering/README.md) | Phase 3; see individual last-verified sections | 2026-11-02 | Local teaching / [INFERRED] reference synthesis | Individual metadata tables link the exact prerequisite chapter for tool control, metrics, provenance, context and retrieval. Existing sources retain their original scope; local prose is not independent external corroboration. |
+| P5-AI-L2 | AI Engineer role preparation | This knowledge base | [AI Engineer](../02-Role-Based-Preparation/AI-Engineer/README.md) | Phase 3; see individual last-verified sections | 2026-11-02 | Local teaching / [INFERRED] | Role-specific prerequisite chapters for Python integration, workflow selection and extraction. No employer process claims. |
+| P5-AI-L3 | RAG Engineer role preparation | This knowledge base | [RAG Engineer](../02-Role-Based-Preparation/RAG-Engineer/README.md) | Phase 3; see individual last-verified sections | 2026-11-02 | Local teaching / [INFERRED] | Document representation, migrations, reranking and ingestion prerequisites. No actual embedding/index benchmark. |
+| P5-AI-L4 | Full Stack AI role preparation | This knowledge base | [Full Stack AI](../02-Role-Based-Preparation/Full-Stack-AI-Engineer/README.md) | Phase 3; see individual last-verified sections | 2026-11-02 | Local teaching / [INFERRED] | UI, jobs, API, authorization, artifacts and rollout prerequisites. No frontend/backend deployment proof. |
+| P5-AI-L5 | Forward Deployed Engineer role preparation | This knowledge base | [FDE](../02-Role-Based-Preparation/Forward-Deployed-Engineer/README.md) | Phase 3; see individual last-verified sections | 2026-11-02 | Local teaching / [INFERRED] | Discovery, pilot scope, integration, communication and operational ownership prerequisites. Suggested practice scenarios, not real customer engagements or measured outcomes. |
+
+## Execution and review boundary
+
+The [two Python helpers and focused tests](../validation/questions-ai/README.md) validate only the exact published local examples in QB-AI-001 and QB-AI-002. Other questions contain worked arithmetic and design reasoning reviewed against their stipulated contracts; those answers are not empirical results. No model, provider, customer connector, vector database, browser, external side effect or production authorization was exercised. Source provenance and prior Phase 3 code do not imply that these new designs have been implemented.
+
+The security-audit skill was used only as guidance for naming a principal, resource and control boundary; this phase does not constitute a security audit. No OpenAI API instructions or SDK calls are included, so no provider-specific execution is claimed.
+
+## Bank navigation
+
+- [AI Engineer — QB-AI-001 through QB-AI-010](AI_Engineer_Questions.md).
+- [RAG — QB-RAG-001 through QB-RAG-010](RAG_Questions.md).
+- [Full Stack AI — QB-FS-001 through QB-FS-010](Full_Stack_AI_Questions.md).
+- [FDE — QB-FDE-001 through QB-FDE-010](FDE_Questions.md).
