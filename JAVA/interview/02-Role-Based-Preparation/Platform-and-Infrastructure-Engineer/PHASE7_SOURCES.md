@@ -1,0 +1,19 @@
+# Phase 7 Platform-and-Infrastructure-Engineer sources
+
+Primary sources directly opened on **2026-11-03**. Original exercises, role emphasis and sample workloads are [INFERRED]; these pages establish mechanisms, not employer questions, measured outcomes or candidate readiness. Rolling documentation is not a pinned runtime contract.
+
+| ID | Title / publisher | URL | Publication/update | Accessed | Type / reliability | Scope and limits |
+|---|---|---|---|---|---|---|
+| P7-INFRA-01 | AWS Well-Architected Framework | [Source](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) | AWS;2024-11-06 | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Quality-attribute review; no quota/price freeze |
+| P7-INFRA-02 | Alerting on SLOs | [Source](https://sre.google/workbook/alerting-on-slos/) | Google SRE Workbook;2018 | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | User indicators/error-budget alert method; no measured SLO |
+| P7-INFRA-03 | HTTP Semantics | [Source](https://www.rfc-editor.org/rfc/rfc9110.html) | IETF RFC9110;June2022 | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | HTTP method/retry contracts; no automatic external-effect guarantee |
+| P7-INFRA-04 | Spark Structured Streaming overview | [Source](https://spark.apache.org/docs/latest/streaming/index.html) | Apache Spark; rolling latest docs | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Incremental stream model; guarantees depend on mode/source/sink and custom effects |
+| P7-INFRA-05 | Kubernetes probes | [Source](https://kubernetes.io/docs/concepts/workloads/pods/probes/) | Kubernetes; rolling docs | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Readiness/liveness/startup boundaries; no cluster test |
+| P7-INFRA-06 | Kubernetes Deployments | [Source](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) | Kubernetes; rolling docs | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Revision/rollout behavior; no deployment |
+| P7-INFRA-07 | Kubernetes Service | [Source](https://kubernetes.io/docs/concepts/services-networking/service/) | Kubernetes; rolling docs | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Service endpoint abstraction; not proof of application authorization or correctness |
+| P7-INFRA-08 | Kubernetes Secrets | [Source](https://kubernetes.io/docs/concepts/configuration/secret/) | Kubernetes; rolling docs | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Secret boundaries; no deployment security proof |
+| P7-INFRA-09 | Linux TCP manual | [Source](https://man7.org/linux/man-pages/man7/tcp.7.html) | Linux man-pages; date not established | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Ordered byte-stream/socket concepts; no network experiment |
+| P7-INFRA-10 | Linux cgroup v2 | [Source](https://docs.kernel.org/admin-guide/cgroup-v2.html) | Linux kernel; living documentation | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Resource-control/accounting interface; no host test |
+| P7-INFRA-11 | Managing Incidents | [Source](https://sre.google/sre-book/managing-incidents/) | Google SRE book;2016 | 2026-11-03 | Primary technical/first-party engineering guidance; high for stated mechanism | Response ownership and communication; no real incident |
+
+No product, pipeline, registry, account or user data was accessed. Diagrams/traces and sample calculations are teaching guidance, not native/integration proof. [Role index](README.md).
