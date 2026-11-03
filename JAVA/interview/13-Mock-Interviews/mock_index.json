@@ -1,0 +1,182 @@
+[
+  {
+    "id": "MOCK-SDE-01",
+    "candidate": "SDE_Mock_Interview.md",
+    "interviewer": "SDE_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-SDE-01",
+    "Target role": "SDE / backend engineer",
+    "Level": "0–2 years; optional advanced followups",
+    "Difficulty": "Intermediate",
+    "Duration minutes": "75",
+    "Company scope": "Company-neutral; original [INFERRED]; no employer attribution",
+    "Tools": "Java 17-compatible API/source; compiler and local tests; collections allowed",
+    "Tasks": "SDE-T1, SDE-T2, SDE-T3, SDE-T4",
+    "Validation": "Exact reference Java block extracted and locally tested; distributed extension is reasoning only",
+    "stage_minutes": [
+      10,
+      30,
+      20,
+      15
+    ]
+  },
+  {
+    "id": "MOCK-AI-01",
+    "candidate": "AI_Engineer_Mock_Interview.md",
+    "interviewer": "AI_Engineer_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-AI-01",
+    "Target role": "AI Engineer",
+    "Level": "0–2 years; optional stretch branches",
+    "Difficulty": "Intermediate",
+    "Duration minutes": "75",
+    "Company scope": "Company-neutral; original [INFERRED]",
+    "Tools": "Python 3.12 standard library; local editor/terminal; no provider calls",
+    "Tasks": "AI-T1, AI-T2, AI-T3, AI-T4",
+    "Validation": "Exact reference helper tested locally; other workflow/release tasks are reasoned exercises",
+    "stage_minutes": [
+      10,
+      30,
+      20,
+      15
+    ]
+  },
+  {
+    "id": "MOCK-ML-01",
+    "candidate": "ML_Engineer_Mock_Interview.md",
+    "interviewer": "ML_Engineer_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-ML-01",
+    "Target role": "ML Engineer / applied ML engineer",
+    "Level": "0–2 years; optional advanced followups",
+    "Difficulty": "Intermediate",
+    "Duration minutes": "75",
+    "Company scope": "Company-neutral; original [INFERRED]; no employer attribution",
+    "Tools": "Python with NumPy; local tests and a calculator; no training framework required",
+    "Tasks": "ML-T1, ML-T2, ML-T3, ML-T4",
+    "Validation": "Exact metric block extracted and tested; splitting/deployment decisions are reviewed reasoning",
+    "stage_minutes": [
+      15,
+      25,
+      20,
+      15
+    ]
+  },
+  {
+    "id": "MOCK-FS-01",
+    "candidate": "Full_Stack_AI_Mock_Interview.md",
+    "interviewer": "Full_Stack_AI_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-FS-01",
+    "Target role": "Full Stack AI Engineer",
+    "Level": "0–2 years; optional stretch branches",
+    "Difficulty": "Intermediate",
+    "Duration minutes": "75",
+    "Company scope": "Company-neutral; original [INFERRED]",
+    "Tools": "Paper/editor; pseudocode or TypeScript interface sketches; no browser/server required",
+    "Tasks": "FS-T1, FS-T2, FS-T3, FS-T4",
+    "Validation": "Only synthetic capacity/replay arithmetic checked locally; API/browser/auth/workers are design reasoning",
+    "stage_minutes": [
+      10,
+      25,
+      25,
+      15
+    ]
+  },
+  {
+    "id": "MOCK-FDE-01",
+    "candidate": "FDE_Mock_Interview.md",
+    "interviewer": "FDE_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-FDE-01",
+    "Target role": "Forward Deployed Engineer; customer engineer",
+    "Level": "0–2 years; supported pilot ownership",
+    "Difficulty": "Intermediate",
+    "Duration minutes": "75",
+    "Company scope": "Company-neutral; original [INFERRED]",
+    "Tools": "Notes, calculator, diagram editor; no external data uploads or customer systems; agree reference/AI rules before starting",
+    "Tasks": "FDE-T1, FDE-T2, FDE-T3, FDE-T4",
+    "Validation": "Roleplay/design reasoning; only supplied evaluation arithmetic has local fixture checks",
+    "stage_minutes": [
+      15,
+      20,
+      20,
+      20
+    ]
+  },
+  {
+    "id": "MOCK-RAG-01",
+    "candidate": "RAG_Engineer_Mock_Interview.md",
+    "interviewer": "RAG_Engineer_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-RAG-01",
+    "Target role": "RAG Engineer",
+    "Level": "0–2 years; optional stretch branches",
+    "Difficulty": "Intermediate",
+    "Duration minutes": "60",
+    "Company scope": "Company-neutral; original [INFERRED]",
+    "Tools": "Paper/editor and calculator; optional local Python; no vector database or model",
+    "Tasks": "RAG-T1, RAG-T2, RAG-T3, RAG-T4",
+    "Validation": "Fixture arithmetic checked locally; retrieval/migration/authorization remain reasoned designs",
+    "stage_minutes": [
+      10,
+      20,
+      20,
+      10
+    ]
+  },
+  {
+    "id": "MOCK-SYS-01",
+    "candidate": "System_Design_Mock_Interview.md",
+    "interviewer": "System_Design_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-SYS-01",
+    "Target role": "SDE; backend; system design",
+    "Level": "0–2 years; core with optional stretch",
+    "Difficulty": "Intermediate",
+    "Duration minutes": "75",
+    "Company scope": "Company-neutral; original [INFERRED]",
+    "Tools": "Editor or paper; calculator; no live services; agree reference/AI rules before starting",
+    "Tasks": "SYS-T1, SYS-T2, SYS-T3, SYS-T4",
+    "Validation": "Scenario reasoning; only supplied capacity arithmetic has local fixture checks",
+    "stage_minutes": [
+      15,
+      25,
+      20,
+      15
+    ]
+  },
+  {
+    "id": "MOCK-LAB-01",
+    "candidate": "Frontier_Lab_Mock_Interview.md",
+    "interviewer": "Frontier_Lab_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-LAB-01",
+    "Target role": "Research Engineer / ML infrastructure engineer",
+    "Level": "0–2 years; optional advanced followups",
+    "Difficulty": "Advanced",
+    "Duration minutes": "75",
+    "Company scope": "Company-neutral; original [INFERRED]; no employer attribution",
+    "Tools": "Python with NumPy; calculator and local tests; no GPU or training framework required",
+    "Tasks": "LAB-T1, LAB-T2, LAB-T3, LAB-T4",
+    "Validation": "Exact masked-loss block extracted and tested; no model training, benchmark or employer loop reproduced",
+    "stage_minutes": [
+      15,
+      25,
+      20,
+      15
+    ]
+  },
+  {
+    "id": "MOCK-START-01",
+    "candidate": "Startup_Mock_Interview.md",
+    "interviewer": "Startup_Mock_Interview_Interviewer.md",
+    "Mock ID": "MOCK-START-01",
+    "Target role": "Startup engineer; full-stack/backend engineer",
+    "Level": "0–2 years; supported ownership",
+    "Difficulty": "Intermediate",
+    "Duration minutes": "60",
+    "Company scope": "Company-neutral; original [INFERRED]",
+    "Tools": "Editor/paper and calculator; no live payment, database or customer actions; agree reference/AI rules before starting",
+    "Tasks": "START-T1, START-T2, START-T3, START-T4",
+    "Validation": "Design/incident reasoning; only supplied size arithmetic has local fixture checks",
+    "stage_minutes": [
+      10,
+      20,
+      20,
+      10
+    ]
+  }
+]
